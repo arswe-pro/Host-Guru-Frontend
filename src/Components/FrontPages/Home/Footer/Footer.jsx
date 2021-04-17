@@ -28,10 +28,10 @@ const Footer = () => {
                         <Card>
                             <Form>
                                 <div style={{ marginBottom: 16 }} >
-                                    <Input size="large" placeholder="Basic usage" />
+                                    <Input size="sm" placeholder="Username" />
                                 </div>
                                 <div style={{ marginBottom: 16 }} >
-                                    <TextArea rows={3} ></TextArea>
+                                    <TextArea rows={3} placeholder="Write Your Opinion" ></TextArea>
                                 </div>
 
                                 <Button size="large" type="primary" block> Submit </Button>

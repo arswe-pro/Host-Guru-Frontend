@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Viki Black",
         "image": "https://images.unsplash.com/photo-1557200134-3103da7b6bff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-        "summary": "In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem."
+        "summary": "In hac habitasse platea dictumst. Aliquam augue quam"
     },
     {
         "id": 2,
@@ -21,7 +21,7 @@
         "id": 4,
         "title": "Darbie Feldberg",
         "image": "https://images.unsplash.com/photo-1516542076529-1ea3854896f2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80",
-        "summary": "In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem."
+        "summary": "In tempor, turpis nec euismod scelerisque, quam a nec sem."
     },
     {
         "id": 5,
@@ -38,8 +38,8 @@
     {
         "id": 7,
         "title": "Lucy Maurice",
-        "image": "https://images.unsplash.com/photo-1605772575717-4548a90a5349?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
-        "summary": "Cum sociis natoque penatibus et magnis dis parturieien. Cum sociis natoque penatibus tur ridiculus mus."
+        "image": "https://images.unsplash.com/photo-1560762484-813fc97650a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80",
+        "summary": "Cum sociis natoque penatibus et magnis dis parturieien. Cums."
     },
     {
         "id": 8,

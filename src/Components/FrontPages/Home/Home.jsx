@@ -11,7 +11,7 @@ import TeamSection from './TeamSection';
 
 const Home = () => {
     return (
-        <>
+        <div>
             <Navbar />
             <HeroSection />
             <ServicesSection />
@@ -21,7 +21,7 @@ const Home = () => {
             <TeamSection />
             <GoogleMap />
             <Footer />
-        </>
+        </div>
     );
 };
 

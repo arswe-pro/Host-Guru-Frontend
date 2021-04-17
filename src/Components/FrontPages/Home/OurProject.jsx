@@ -21,7 +21,7 @@ const OurProject = () => {
                     <Col xs={23} sm={12} md={8} lg={6} xl={6} xxl={4} key={project.id}>
                         <Card hoverable cover={<Image alt="example" src={project.image} />} >
                             <Meta title={project.title} description={project.summary} />
-                            <Button style={{margin:'1rem 0'}} type="primary" size="large"  block> See Live </Button>
+                            <Button style={{margin:'1rem 0'}} type="primary" size="sm"  block> See Live </Button>
                         </Card>
                     </Col>
                 )}

@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "title":"Hatchling Plan",
+        "Single": "Single Domain",
+        "FreeWordPress": " Free WordPress Installs",
+        "FreeSSL": " Free SSL Certificate",
+        "$200": " $200 Marketing Offer",
+        "Transfer": "Free WordPress/Cpanel Website Transfer",
+        "Email": "Professional Email Address",
+        "pirce": "Starting At $2.75/mo*"
+    },
+    {
+        "id": 2,
+        "title":"Baby Plan",
+        "Single": "Single Domain",
+        "Everything": "Everything in Hatchling, plus:",
+        "Transfer": "Free WordPress/Cpanel Website Transfer",
+        "Unlimited ": "Domains",
+        "pirce": "Starting At $3.38/mo*"
+    },
+    {
+        "id": 3,
+        "title":"Business Plan",
+        "Single": "Single Domain",
+        "FreeWordPress": " Free WordPress Installs",
+        "FreeSSL": " Free SSL Certificate",
+        "$200": " $200 Marketing Offer",
+        "Transfer": "Free WordPress/Cpanel Website Transfer",
+        "Email": "Professional Email Address",
+        "price": "Starting At $5.08/mo*"
+    }
+]
