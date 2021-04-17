@@ -10,7 +10,7 @@ import { ArrowUpOutlined } from '@ant-design/icons';
 const Footer = () => {
     return (
         <div>
-            <Layout style={{ marginTop: '3rem' }}>
+            <Layout style={{ marginTop: '3rem' ,borderTop:'4px solid rgb(255 0 0 / 11%);' }}>
                 <Row justify="center">
                     <Col xs={23} sm={12} md={8} lg={8} xl={6} xxl={6}>
                         <Card>
