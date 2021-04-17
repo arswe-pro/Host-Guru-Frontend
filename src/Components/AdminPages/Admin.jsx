@@ -1,8 +1,9 @@
 import React from 'react';
-import { Layout, Menu, Breadcrumb } from 'antd';
-import { FileOutlined, TeamOutlined, UserOutlined, } from '@ant-design/icons';
+import { Layout, Menu, Breadcrumb, Row, Col, Card } from 'antd';
+import { ArrowRightOutlined, FileOutlined, TeamOutlined, UserOutlined, } from '@ant-design/icons';
 import logo2 from '../../images/logo.png'
 import { Link } from 'react-router-dom';
+import Meta from 'antd/lib/card/Meta';
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
@@ -55,15 +56,39 @@ const Admin = () => {
 
 
 
-                        <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
+                        <div style={{ padding: 24, minHeight: 360 }}>
 
-                            content components
-                           
+                            <Row justify="center">
+                                <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4}>
+                                    <Card title="Total hero section item " style={{ backgroundColor: '#ccc' }}>
+                                        <ArrowRightOutlined /> total : 0
+                                        <br/>
+                                        <Meta title="All hero section content and images" />
+                                    </Card>
+                                </Col>
+                                <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4}>
+                                    <Card title="Total Service section item " style={{ backgroundColor: '#ccc' }}>
+                                        <ArrowRightOutlined /> total : 0
+                                        <br/>
+                                        <Meta title="All hero section content and images" />
+                                    </Card>
+                                </Col>
+                                <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4}>
+                                    <Card title="Total Pricing section item " style={{ backgroundColor: '#ccc' }}>
+                                        <ArrowRightOutlined /> total : 0
+                                        <br/>
+                                        <Meta title="All hero section content and images" />
+                                    </Card>
+                                </Col>
+                                <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4}>
+                                    <Card title="Total Team section item " style={{ backgroundColor: '#ccc' }}>
+                                        <ArrowRightOutlined /> total : 0
+                                        <br/>
+                                        <Meta title="All hero section content and images" />
+                                    </Card>
+                                </Col>
+                            </Row>
                         </div>
-
-
-
-
 
                     </Content>
                     <Footer style={{ textAlign: 'center' }}>host guru ©2021 Created by Abdur rahman </Footer>

@@ -11,7 +11,6 @@ const TeamSection = () => {
     return (
         <Layout style={{ marginTop: '3rem', marginBottom: '2rem' }}>
             <Title style={{ textAlign: 'center' }}> Our Team </Title>
-            <p style={{ textAlign: 'center' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nebitis.</p>
             <Row justify="center">
                 <Col xs={23} sm={12} md={8} lg={6} xl={4} xxl={3}>
                     <Card hoverable  cover={<Image alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />} >

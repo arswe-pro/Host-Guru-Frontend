@@ -10,7 +10,7 @@ const ServicesSection = () => {
         <>
             <Layout style={{ marginTop: '4rem', marginBottom: '2rem' }}>
                 <Title style={{ textAlign: 'center', marginBottom: '2rem' }}>Your Services </Title>
-
+                <p style={{ textAlign: 'center' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nebitis.</p>
                 <Row justify="center">
                     <Col xs={23} sm={12} md={8} lg={6} xl={6} xxl={4}>
                         <Card style={{ textAlign: 'center', backgroundColor: 'GrayText', color: '#fff' }}>
