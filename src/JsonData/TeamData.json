@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Aharon Glasbey",
+        "image": "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80",
+        "designation": "Chemical Engineer",
+        "summary": "Aenean fermentum. Donec ut mauris eget massa tempor convallis."
+    },
+    {
+        "id": 2,
+        "name": "Carver Mussilli",
+        "image": "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80",
+        "designation": "Actuary",
+        "summary": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc."
+    },
+    {
+        "id": 3,
+        "name": "Moina Fri",
+        "image": "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80",
+        "designation": "Staff Scientist",
+        "summary": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque."
+    },
+    {
+        "id": 4,
+        "name": "Missie Pointing",
+        "image": "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80",
+        "designation": "Recruiting Manager",
+        "summary": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam."
+    },
+    {
+        "id": 5,
+        "name": "Peggie Phelps",
+        "image": "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80",
+        "designation": "Clinical Specialist",
+        "summary": "Phasellus sit amet erat."
+    },
+    {
+        "id": 6,
+        "name": "Lucien Prattington",
+        "image": "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80",
+        "designation": "Account Representative IV",
+        "summary": "Duis mattis egestas metus. Aenean fermentum."
+    }
+]

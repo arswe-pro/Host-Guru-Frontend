@@ -3,6 +3,8 @@ import Footer from './Footer/Footer';
 import GoogleMap from './GoogleMap';
 import HeroSection from './HeroSection';
 import Navbar from './Navbar/Navbar';
+import OurClient from './OurClient';
+import OurProject from './OurProject';
 import Pricing from './Pricing';
 import ServicesSection from './ServicesSection';
 import TeamSection from './TeamSection';
@@ -13,7 +15,9 @@ const Home = () => {
             <Navbar />
             <HeroSection />
             <ServicesSection />
+            <OurProject />
             <Pricing />
+            <OurClient />
             <TeamSection />
             <GoogleMap />
             <Footer />

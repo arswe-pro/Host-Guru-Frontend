@@ -54,43 +54,40 @@ const Admin = () => {
                             <Breadcrumb.Item>Bill</Breadcrumb.Item>
                         </Breadcrumb>
 
-
-
                         <div style={{ padding: 24, minHeight: 360 }}>
-
                             <Row justify="center">
                                 <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4}>
                                     <Card title="Total hero section item " style={{ backgroundColor: '#ccc' }}>
                                         <ArrowRightOutlined /> total : 0
-                                        <br/>
+                                        <br />
                                         <Meta title="All hero section content and images" />
                                     </Card>
                                 </Col>
                                 <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4}>
                                     <Card title="Total Service section item " style={{ backgroundColor: '#ccc' }}>
                                         <ArrowRightOutlined /> total : 0
-                                        <br/>
+                                        <br />
                                         <Meta title="All hero section content and images" />
                                     </Card>
                                 </Col>
                                 <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4}>
                                     <Card title="Total Pricing section item " style={{ backgroundColor: '#ccc' }}>
                                         <ArrowRightOutlined /> total : 0
-                                        <br/>
+                                        <br />
                                         <Meta title="All hero section content and images" />
                                     </Card>
                                 </Col>
                                 <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4}>
                                     <Card title="Total Team section item " style={{ backgroundColor: '#ccc' }}>
                                         <ArrowRightOutlined /> total : 0
-                                        <br/>
+                                        <br />
                                         <Meta title="All hero section content and images" />
                                     </Card>
                                 </Col>
                             </Row>
                         </div>
-
                     </Content>
+                    
                     <Footer style={{ textAlign: 'center' }}>host guru ©2021 Created by Abdur rahman </Footer>
                 </Layout>
             </Layout>
