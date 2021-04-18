@@ -1,16 +1,16 @@
 import React from 'react';
 import Footer from '../Home/Footer/Footer';
 import Navbar from '../Home/Navbar/Navbar';
-import TeamSection from '../Home/TeamSection';
+import ServicesSection from '../Home/ServicesSection';
 
-const About = () => {
+const Service = () => {
     return (
-        <div>
+        <>
             <Navbar />
-            <TeamSection />
+            <ServicesSection />
             <Footer />
-        </div>
+        </>
     );
 };
 
-export default About;
+export default Service;

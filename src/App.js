@@ -5,6 +5,11 @@ import SignIn from './Components/Authentication/Form/SignIn';
 import SignUp from './Components/Authentication/Form/SignUp';
 import Home from './Components/FrontPages/Home/Home';
 import Admin from './Components/AdminPages/Admin';
+import About from './Components/FrontPages/About/About';
+import Service from './Components/FrontPages/Service/Service';
+import Project from './Components/FrontPages/Project/Project';
+import Price from './Components/FrontPages/Pricing/Price';
+import Client from './Components/FrontPages/Client/Client';
 
 
 function App() {
@@ -14,6 +19,11 @@ function App() {
 				<Switch>
 					<Route exact path="/"> <Home /> </Route>
 					<Route path="/Home"> <Home /> </Route>
+					<Route path="/About"> <About /> </Route>
+					<Route path="/Service"> <Service /> </Route>
+					<Route path="/Price"> <Price /> </Route>
+					<Route path="/Project"> <Project /> </Route>
+					<Route path="/Client"> <Client /> </Route>
 					<Route path="/Admin"> <Admin /> </Route>
 					<Route path="/SignIn"> <SignIn /> </Route>
 					<Route path="/SignUp"> <SignUp /> </Route>

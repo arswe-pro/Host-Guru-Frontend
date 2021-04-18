@@ -1,7 +1,6 @@
 import { PlayCircleOutlined, CopyOutlined, Html5Outlined, AppstoreOutlined } from '@ant-design/icons';
 import { Card, Col, Row, Typography } from 'antd';
 import Meta from 'antd/lib/card/Meta';
-import Layout from 'antd/lib/layout/layout';
 import React from 'react';
 const { Title } = Typography;
 
@@ -44,8 +43,9 @@ const ServicesSection = () => {
 
     return (
         <>
-            <Layout style={{ marginTop: '4rem', marginBottom: '2rem', }}>
+            <div style={{ marginTop: '4rem', marginBottom: '2rem', }}>
                 <Title style={{ textAlign: 'center', marginBottom: '2rem' }}>Your Services </Title>
+                <hr style={{padding:'1px' , backgroundColor:'lightsalmon' , width:'10rem' , margin: '0 auto' , marginBottom:'2rem'}} />
                 <p style={{ textAlign: 'center' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nebitis.</p>
                 <Row justify="center">
                     {ServiceData.map(data =>
@@ -58,7 +58,7 @@ const ServicesSection = () => {
                         </Col>
                     )}
                 </Row>
-            </Layout>
+            </div>
         </>
     );
 };

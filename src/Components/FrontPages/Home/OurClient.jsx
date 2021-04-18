@@ -5,6 +5,10 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ClientData from '../../../JsonData/ClientData.json'
 const { Title } = Typography;
+
+
+
+
 const OurClient = () => {
 
     const [clients, setClients] = useState(ClientData)
@@ -14,8 +18,9 @@ const OurClient = () => {
     }, [clients])
 
     return (
-        <div style={{ margin: '4rem' }}>
-            <Title style={{ textAlign: 'center', margin: '4rem 0' }}>Our Client </Title>
+        <div style={{ margin: '4rem 2rem' }}>
+            <Title style={{ textAlign: 'center' }}>Our Client </Title>
+            <hr style={{padding:'1px' , backgroundColor:'lightsalmon' , width:'10rem' , margin: '0 auto' , marginBottom:'2rem'}} />
             <Row justify="center">
                 {clients.map(client =>
                     <Col xs={23} sm={12} md={8} lg={6} xl={6} xxl={4} key={client.id}>

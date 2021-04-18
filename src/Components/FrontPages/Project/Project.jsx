@@ -1,16 +1,16 @@
 import React from 'react';
 import Footer from '../Home/Footer/Footer';
 import Navbar from '../Home/Navbar/Navbar';
-import TeamSection from '../Home/TeamSection';
+import OurProject from '../Home/OurProject';
 
-const About = () => {
+const Project = () => {
     return (
         <div>
             <Navbar />
-            <TeamSection />
+            <OurProject />
             <Footer />
         </div>
     );
 };
 
-export default About;
+export default Project;

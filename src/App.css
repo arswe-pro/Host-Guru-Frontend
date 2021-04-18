@@ -6,10 +6,8 @@
 }
 
 body {
-	background-image: url('./images/hero.png') !important;
+	background-image: url('./images/background.png') !important;
 	font-family: 'Roboto', sans-serif !important;
 	font-weight: 400 !important;
 	font-size: 1.4rem !important;
-	background-repeat: no-repeat;
-	background-size: cover;
 }

@@ -1,6 +1,5 @@
 import { CaretRightOutlined } from '@ant-design/icons';
 import { Button, Card, Col, Row, Typography } from 'antd';
-import Layout from 'antd/lib/layout/layout';
 import React, { useEffect, useState } from 'react';
 import PricingData from '../../../JsonData/PricingData.json'
 
@@ -17,8 +16,10 @@ const Pricing = () => {
     }, [pricings])
 
     return (
-        <Layout style={{ marginTop: '4rem', textAlign: 'center' }}>
+        <div style={{ marginTop: '4rem', textAlign: 'center' }}>
+           
             <Title > Every Plan Pricing </Title>
+            <hr style={{padding:'1px' , backgroundColor:'lightsalmon' , width:'10rem' , margin: '0 auto' , marginBottom:'2rem'}} />
             <Row justify="center">
                 {pricings.map(pricing =>
 
@@ -42,7 +43,7 @@ const Pricing = () => {
 
             </Row>
 
-        </Layout>
+        </div>
     );
 };
 

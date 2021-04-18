@@ -1,16 +1,16 @@
 import React from 'react';
 import Footer from '../Home/Footer/Footer';
 import Navbar from '../Home/Navbar/Navbar';
-import TeamSection from '../Home/TeamSection';
+import Pricing from '../Home/Pricing';
 
-const About = () => {
+const Price = () => {
     return (
         <div>
             <Navbar />
-            <TeamSection />
+            <Pricing />
             <Footer />
         </div>
     );
 };
 
-export default About;
+export default Price;

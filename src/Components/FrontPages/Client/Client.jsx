@@ -1,16 +1,16 @@
 import React from 'react';
 import Footer from '../Home/Footer/Footer';
 import Navbar from '../Home/Navbar/Navbar';
-import TeamSection from '../Home/TeamSection';
+import OurClient from '../Home/OurClient';
 
-const About = () => {
+const Client = () => {
     return (
         <div>
             <Navbar />
-            <TeamSection />
+            <OurClient />
             <Footer />
         </div>
     );
 };
 
-export default About;
+export default Client;
