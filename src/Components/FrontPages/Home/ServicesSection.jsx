@@ -1,38 +1,40 @@
-import { PlayCircleOutlined, CopyOutlined, Html5Outlined, AppstoreOutlined } from '@ant-design/icons';
-import { Card, Col, Row, Typography } from 'antd';
+import { PlayCircleOutlined, CopyOutlined, InsertRowBelowOutlined, AppstoreOutlined } from '@ant-design/icons';
+import { Button, Card, Col, Row, Typography } from 'antd';
 import Meta from 'antd/lib/card/Meta';
 import React from 'react';
+import { Link } from 'react-router-dom';
 const { Title } = Typography;
 
 const ServiceData = [
     {
         title: 'Shared hosting',
-        description: 'We are open 7 days',
-        icon: <Html5Outlined />,
-      
+       
+        icon: <InsertRowBelowOutlined />,
+        price: "Starting At $3.08/mo*",
         summary: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis illum molestias. Accusantium modi quae magni sed inventor'
 
     },
     {
         title: 'Cloud Hosting ',
-        description: 'We are open 7 days',
-        icon: <CopyOutlined />,
        
+        icon: <CopyOutlined />,
+        price: "Starting At $5.08/mo*",
         summary: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis illum molestias. Accusantium modi quae magni sed inventor'
 
     },
     {
         title: 'AWS Hosting',
-        description: 'Brooklyn, NY 10003 USA',
+        
         icon: <PlayCircleOutlined />,
-      
+        price: "Starting At $8.08/mo*",
         summary: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis illum molestias. Accusantium modi quae magni sed inventor'
 
     },
     {
         title: 'Azure Hosting',
-        description: 'this is lutuputu',
+       
         icon: <AppstoreOutlined />,
+        price: "Starting At $10.08/mo*",
         summary: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis illum molestias. Accusantium modi quae magni sed inventor'
     }
 ]
@@ -52,8 +54,9 @@ const ServicesSection = () => {
                             <Card hoverable style={{ textAlign: 'center', backgroundColor:'lightsalmon', color: '#fff' }}>
                                 <div style={{ fontSize: '8rem', color: 'InfoBackground' }}> {data.icon}  </div>
                                 <Title level={4}>{data.title} </Title>
-                                <Meta title={data.description} description={data.summary}> </Meta>
+                                <Meta title={data.price} description={data.summary}> </Meta>
                             </Card>
+                            <Link to={`Orders/${data.id}`}> <Button size="large" type="primary" block> Buy Now! </Button> </Link>
                         </Col>
                     )}
                 </Row>
