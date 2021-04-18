@@ -25,7 +25,8 @@ const HeroSection = () => {
                 </div>
             </Col>
             <Col xs={22} sm={22} md={11} lg={11} xl={11} xxl={11}>
-                <Image width={500} style={{ marginTop: '5rem' }} src={hosting} />
+                <br/>
+                <Image width={500}  src={hosting} />
             </Col>
         </Row>
 

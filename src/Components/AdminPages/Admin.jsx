@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Menu, Breadcrumb, Row, Col, Card, Button } from 'antd';
-import { ArrowRightOutlined, FileOutlined, LogoutOutlined, TeamOutlined, UserOutlined, } from '@ant-design/icons';
+import { ArrowRightOutlined, LogoutOutlined, TeamOutlined, UserOutlined, } from '@ant-design/icons';
 import logo2 from '../../images/logo.png'
 import { Link } from 'react-router-dom';
 import Meta from 'antd/lib/card/Meta';
