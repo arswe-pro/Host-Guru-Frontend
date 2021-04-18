@@ -43,7 +43,7 @@ const SignUp = () => {
                                 <Input size="large" prefix={<LockOutlined />} type="password" placeholder="Confirm Password" />
                             </Form.Item>
 
-                            <Link to="/">  <Button type="primary" htmlType="submit" block> Create Account </Button> </Link>
+                            <Button type="primary" htmlType="submit" block> Create Account </Button>
 
                             <Link to="/SignIn"> You Have a Account ?  Sign In!</Link>
 
