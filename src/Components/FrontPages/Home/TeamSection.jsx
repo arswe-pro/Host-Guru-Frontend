@@ -14,7 +14,7 @@ const TeamSection = () => {
         setTeams(teams)
     }, [teams])
     return (
-        <div style={{ margin: '3rem 2rem' }}>
+        <div style={{ margin: '3rem 2rem' , textAlign:'center' }}>
             <Title style={{ textAlign: 'center' }}> Our Team </Title>
             <hr style={{padding:'1px' , backgroundColor:'lightsalmon' , width:'10rem' , margin: '0 auto' , marginBottom:'2rem'}} />
             <Row justify="center">

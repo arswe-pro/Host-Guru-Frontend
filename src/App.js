@@ -10,6 +10,7 @@ import Service from './Components/FrontPages/Service/Service';
 import Project from './Components/FrontPages/Project/Project';
 import Price from './Components/FrontPages/Pricing/Price';
 import Client from './Components/FrontPages/Client/Client';
+import Orders from './Components/FrontPages/OrderPage/Orders';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 					<Route path="/About"> <About /> </Route>
 					<Route path="/Service"> <Service /> </Route>
 					<Route path="/Price"> <Price /> </Route>
+					<Route path="/Orders/:id"> <Orders /> </Route>
 					<Route path="/Project"> <Project /> </Route>
 					<Route path="/Client"> <Client /> </Route>
 					<Route path="/Admin"> <Admin /> </Route>

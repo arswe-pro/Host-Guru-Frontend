@@ -1,6 +1,7 @@
 import { CaretRightOutlined } from '@ant-design/icons';
 import { Button, Card, Col, Row, Typography } from 'antd';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import PricingData from '../../../JsonData/PricingData.json'
 
 const { Title } = Typography;
@@ -35,7 +36,7 @@ const Pricing = () => {
                             <div style={{ fontWeight: '600', textAlign: 'center', margin: '1rem 1rem ', fontSize: '22px' }}>
                                 <strong> Starting At $2.75/mo* </strong>
                             </div>
-                            <Button size="large" type="primary" block> Buy Now! </Button>
+                            <Link to={`Orders/${pricing.id}`}> <Button size="large" type="primary" block> Buy Now! </Button> </Link>
                         </Card>
                     </Col>
                 )}

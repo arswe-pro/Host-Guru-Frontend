@@ -1,4 +1,4 @@
-import { Menu } from 'antd';
+import { Button, Menu } from 'antd';
 import { Header } from 'antd/lib/layout/layout';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -16,7 +16,7 @@ const Navbar = () => {
                 <Menu.Item key="Project"> <Link to="/Client">Client </Link> </Menu.Item>
                 <Menu.Item key="About"> <Link to="/About"> About </Link> </Menu.Item>
                 <Menu.Item key="Admin"> <Link to="/Admin"> Admin </Link> </Menu.Item>
-                <Menu.Item key="SignIn"> <Link to="/SignIn"> SignIn </Link> </Menu.Item>
+                <Menu.Item key="SignIn"> <Link to="/SignIn"> <Button type="primary"> Sign In</Button> </Link> </Menu.Item>
             </Menu>
         </Header>
     );
