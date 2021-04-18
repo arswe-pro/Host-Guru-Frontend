@@ -31,7 +31,7 @@ const Auth = () => {
                 return res.user;
             })
             .catch(err => {
-                // console.log(err.message);
+                console.log(err.message);
                 setUser(null);
                 return err.message;
 
@@ -44,11 +44,38 @@ const Auth = () => {
                 return true;
             })
             .catch(err => {
-                // console.log(err.message);
+                console.log(err.message);
                 return false;
             });
     }
+    const register = (name, email, password) => {
+        return firebase.auth().createUserWithEmailAndPassword(email, password)
+            .then((currentUser) => {
+                // Signed in 
+                var user = currentUser.user;
+                user.updateProfile({ displayName: name })
+                return true;
+            })
+            .catch((error) => {
+                console.log(error);
+                return { error: error.message };
+            });
+    }
+    const signInWithEmailAndPassword = async (email, password) => {
+        await firebase.auth().signInWithEmailAndPassword(email, password)
+            .then(res => {
+                const signedInUser = getUser(res.user);
+                setUser(signedInUser);
+                return true;
 
+            })
+            .catch(err => {
+                console.log(err.message);
+                setUser(null);
+                return false;
+
+            })
+    }
     useEffect(() => {
         firebase.auth().onAuthStateChanged((usr) => {
             if (usr) {
@@ -62,8 +89,10 @@ const Auth = () => {
     }, [])
     return {
         user,
+        register,
         signInWithGoogle,
         signOut,
+        signInWithEmailAndPassword
     }
 }
 export default Auth;
