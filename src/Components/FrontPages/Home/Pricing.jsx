@@ -31,7 +31,7 @@ const Pricing = () => {
                             <p> <CaretRightOutlined /><strong>{pricing.$200}</strong> </p>
                             <p> <CaretRightOutlined /><strong>{pricing.Transfer}</strong> </p>
                             <p> <CaretRightOutlined /><strong>{pricing.Email}</strong> </p>
-                            <p> <CaretRightOutlined /><strong>{pricing.pirce}</strong> </p>
+                            <p> <CaretRightOutlined /><strong>{pricing.price}</strong> </p>
                             <div style={{ fontWeight: '600', textAlign: 'center', margin: '1rem 1rem ', fontSize: '22px' }}>
                                 <strong> Starting At $2.75/mo* </strong>
                             </div>

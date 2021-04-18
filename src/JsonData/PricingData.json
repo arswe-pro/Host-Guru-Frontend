@@ -8,7 +8,7 @@
         "$200": " $200 Marketing Offer",
         "Transfer": "Free WordPress/Cpanel Website Transfer",
         "Email": "Professional Email Address",
-        "pirce": "Starting At $2.75/mo*"
+        "price": "Starting At $2.75/mo*"
     },
     {
         "id": 2,
@@ -17,7 +17,7 @@
         "Everything": "Everything in Hatchling, plus:",
         "Transfer": "Free WordPress/Cpanel Website Transfer",
         "Unlimited ": "Domains",
-        "pirce": "Starting At $3.38/mo*"
+        "price": "Starting At $3.38/mo*"
     },
     {
         "id": 3,
@@ -28,6 +28,6 @@
         "$200": " $200 Marketing Offer",
         "Transfer": "Free WordPress/Cpanel Website Transfer",
         "Email": "Professional Email Address",
-        "price": "Starting At $5.08/mo*"
+        "price": "Starting At $10.08/mo*"
     }
 ]
