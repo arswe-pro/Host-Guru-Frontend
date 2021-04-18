@@ -1,13 +1,23 @@
 import React from 'react';
-import { Layout, Menu, Breadcrumb, Row, Col, Card } from 'antd';
-import { ArrowRightOutlined, FileOutlined, TeamOutlined, UserOutlined, } from '@ant-design/icons';
+import { Layout, Menu, Breadcrumb, Row, Col, Card, Button } from 'antd';
+import { ArrowRightOutlined, FileOutlined, LogoutOutlined, TeamOutlined, UserOutlined, } from '@ant-design/icons';
 import logo2 from '../../images/logo.png'
 import { Link } from 'react-router-dom';
 import Meta from 'antd/lib/card/Meta';
+import { useAuth } from '../Authentication/Auth/useAuth';
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
 const Admin = () => {
+
+    const auth = useAuth();
+
+    const handleSignOut = () => {
+        auth.signOut()
+            .then(res => {
+                window.location.pathname = '/';
+            })
+    }
 
     return (
         <div>
@@ -41,13 +51,16 @@ const Admin = () => {
                             <Menu.Item key="6">Team 1</Menu.Item>
                             <Menu.Item key="8">Team 2</Menu.Item>
                         </SubMenu>
-                        <Menu.Item key="9" icon={<FileOutlined />}>
-                            Files
+                        <Menu.Item>
+                            {auth.user ? <Link to="/SignIn"> <Button onClick={handleSignOut}> <LogoutOutlined /> {auth.user.name}</Button> </Link>
+                                :
+                                <Link to="/SignIn"> <Button type="primary"> Sign In</Button> </Link>
+                            }
                         </Menu.Item>
                     </Menu>
                 </Sider>
-                <Layout className="site-layout">
-                    <Header className="site-layout-background" style={{ padding: 0 }} />
+                <Layout>
+                    <Header style={{ padding: 0 }} />
                     <Content style={{ margin: '0 16px' }}>
                         <Breadcrumb style={{ margin: '16px 0' }}>
                             <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
@@ -87,7 +100,7 @@ const Admin = () => {
                             </Row>
                         </div>
                     </Content>
-                    
+
                     <Footer style={{ textAlign: 'center' }}>host guru ©2021 Created by Abdur rahman </Footer>
                 </Layout>
             </Layout>
