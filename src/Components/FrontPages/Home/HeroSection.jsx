@@ -11,8 +11,8 @@ const HeroSection = () => {
 
         <Row justify="center">
             <Col xs={22} sm={22} md={11} lg={11} xl={11} xxl={11}>
-                <div style={{ marginTop: '6rem', color: '#fff' }}>
-                    <Title style={{ color: '#fff' }}>Software and Web Application  <br /> Service Provider </Title>
+                <div style={{ marginTop: '6rem', }}>
+                    <Title>Software and Web Application  <br /> Service Provider </Title>
 
                     <CheckOutlined /> Free 1 Year Domain Registration on Select Plans! <br />
                     <CheckOutlined /> Hundreds of Drag-and-Drop Website Templates<br />

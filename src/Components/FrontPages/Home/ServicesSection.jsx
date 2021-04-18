@@ -6,34 +6,33 @@ const { Title } = Typography;
 
 const ServiceData = [
     {
-        title: 'Website Provide',
+        title: 'Shared hosting',
         description: 'We are open 7 days',
         icon: <Html5Outlined />,
-        background: 'primary',
+      
         summary: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis illum molestias. Accusantium modi quae magni sed inventor'
 
     },
     {
-        title: 'Hosting Provide',
+        title: 'Cloud Hosting ',
         description: 'We are open 7 days',
         icon: <CopyOutlined />,
-        background: 'primary',
+       
         summary: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis illum molestias. Accusantium modi quae magni sed inventor'
 
     },
     {
-        title: 'SEO Provide',
+        title: 'AWS Hosting',
         description: 'Brooklyn, NY 10003 USA',
         icon: <PlayCircleOutlined />,
-        background: 'dark',
+      
         summary: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis illum molestias. Accusantium modi quae magni sed inventor'
 
     },
     {
-        title: 'Marketing Provide',
+        title: 'Azure Hosting',
         description: 'this is lutuputu',
         icon: <AppstoreOutlined />,
-        background: 'primary',
         summary: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis illum molestias. Accusantium modi quae magni sed inventor'
     }
 ]
