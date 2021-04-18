@@ -48,7 +48,7 @@ const ServicesSection = () => {
                 <p style={{ textAlign: 'center' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nebitis.</p>
                 <Row justify="center">
                     {ServiceData.map(data =>
-                        <Col xs={23} sm={12} md={8} lg={6} xl={6} xxl={4} key={data.id}>
+                        <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4} key={data.id}>
                             <Card hoverable style={{ textAlign: 'center', backgroundColor:'lightsalmon', color: '#fff' }}>
                                 <div style={{ fontSize: '8rem', color: 'InfoBackground' }}> {data.icon}  </div>
                                 <Title level={4}>{data.title} </Title>

@@ -23,7 +23,7 @@ const Pricing = () => {
             <Row justify="center">
                 {pricings.map(pricing =>
 
-                    <Col xs={23} sm={12} md={8} lg={6} xl={6} xxl={4}>
+                    <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4}>
                         <Card title={pricing.title} hoverable style={{ backgroundColor: '#3d7c7d', color: '#fff' }}>
                             <p> <CaretRightOutlined />  <strong>{pricing.Single} </strong></p>
                             <p> <CaretRightOutlined /><strong>{pricing.FreeWordPress}</strong> </p>

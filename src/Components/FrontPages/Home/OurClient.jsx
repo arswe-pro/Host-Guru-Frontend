@@ -23,7 +23,7 @@ const OurClient = () => {
             <hr style={{padding:'1px' , backgroundColor:'lightsalmon' , width:'10rem' , margin: '0 auto' , marginBottom:'2rem'}} />
             <Row justify="center">
                 {clients.map(client =>
-                    <Col xs={23} sm={12} md={8} lg={6} xl={6} xxl={4} key={client.id}>
+                    <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4} key={client.id}>
                         <Card title={client.name} hoverable cover={<Image alt="example" src={client.image} />} >
                             <Meta title={client.designation} description={client.summary} />
                             <div style={{ textAlign: 'center' }}>

@@ -19,7 +19,7 @@ const TeamSection = () => {
             <hr style={{padding:'1px' , backgroundColor:'lightsalmon' , width:'10rem' , margin: '0 auto' , marginBottom:'2rem'}} />
             <Row justify="center">
                 {teams.map(team =>
-                    <Col xs={23} sm={12} md={8} lg={8} xl={6} xxl={4} key={team.id}>
+                    <Col xs={24} sm={12} md={8} lg={8} xl={6} xxl={4} key={team.id}>
                         <Card title={team.name} hoverable cover={<Image alt={team.name} src={team.image} />} >
                             <Meta title={team.designation} description={team.summary} />
 
