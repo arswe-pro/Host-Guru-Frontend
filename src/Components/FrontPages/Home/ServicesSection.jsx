@@ -7,32 +7,32 @@ const { Title } = Typography;
 
 const ServiceData = [
     {
+        id:"1",
         title: 'Shared hosting',
-       
         icon: <InsertRowBelowOutlined />,
         price: "Starting At $3.08/mo*",
         summary: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis illum molestias. Accusantium modi quae magni sed inventor'
 
     },
     {
+        id:"2",
         title: 'Cloud Hosting ',
-       
         icon: <CopyOutlined />,
         price: "Starting At $5.08/mo*",
         summary: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis illum molestias. Accusantium modi quae magni sed inventor'
 
     },
     {
+        id:"3",
         title: 'AWS Hosting',
-        
         icon: <PlayCircleOutlined />,
         price: "Starting At $8.08/mo*",
         summary: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis illum molestias. Accusantium modi quae magni sed inventor'
 
     },
     {
+        id:"4",
         title: 'Azure Hosting',
-       
         icon: <AppstoreOutlined />,
         price: "Starting At $10.08/mo*",
         summary: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus facilis illum molestias. Accusantium modi quae magni sed inventor'
