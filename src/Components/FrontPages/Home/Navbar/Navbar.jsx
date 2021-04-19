@@ -1,4 +1,3 @@
-import { LogoutOutlined } from '@ant-design/icons';
 import { Button, Menu } from 'antd';
 import { Header } from 'antd/lib/layout/layout';
 import React from 'react';
@@ -22,10 +21,10 @@ const Navbar = () => {
                 <Menu.Item key="Project"> <Link to="/Project"> Project </Link> </Menu.Item>
                 <Menu.Item key="Project"> <Link to="/Client">Client </Link> </Menu.Item>
                 <Menu.Item key="About"> <Link to="/About"> About </Link> </Menu.Item>
-                <Menu.Item key="Admin"> <Link to="/Admin"> Admin </Link> </Menu.Item>
+                <Menu.Item key="AdminPanel"> <Link to="/AdminPanel"> Admin </Link> </Menu.Item>
                 {
                     auth.user ?
-                        <Menu.Item key="SignIn"> <Link to="/SignIn" onClick={handleSignOut} > <LogoutOutlined /> Sign Out </Link> </Menu.Item>
+                        <Menu.Item key="SignIn"> <Link to="/SignIn" onClick={handleSignOut} > <Button style={{backgroundColor:'pink'}}>Sign Out</Button> </Link> </Menu.Item>
                         :
                         <Menu.Item key="SignIn"> <Link to="/SignIn"> <Button type="primary"> Sign In</Button> </Link> </Menu.Item>
                 }

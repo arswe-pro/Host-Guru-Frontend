@@ -10,7 +10,7 @@ const HeroSection = () => {
     return (
 
         <Row justify="center">
-            <Col xs={24} sm={24} md={11} lg={11} xl={11} xxl={11}>
+            <Col xs={23} sm={23} md={11} lg={11} xl={11} xxl={11}>
                 <div style={{ marginTop: '6rem', }}>
                     <Title>Bring your ideas to life Hosting <br /> Service Provider </Title>
 

@@ -20,7 +20,7 @@ const Pricing = () => {
         <div style={{ marginTop: '4rem', textAlign: 'center' }}>
            
             <Title > Every Plan Pricing </Title>
-            <hr style={{padding:'1px' , backgroundColor:'lightsalmon' , width:'10rem' , margin: '0 auto' , marginBottom:'2rem'}} />
+            <hr style={{padding:'1px' , backgroundColor:'saddlebrown' , width:'10rem' , margin: '0 auto' , marginBottom:'2rem'}} />
             <Row justify="center">
                 {pricings.map(pricing =>
 
@@ -32,9 +32,8 @@ const Pricing = () => {
                             <p> <CaretRightOutlined /><strong>{pricing.$200}</strong> </p>
                             <p> <CaretRightOutlined /><strong>{pricing.Transfer}</strong> </p>
                             <p> <CaretRightOutlined /><strong>{pricing.Email}</strong> </p>
-                            <p> <CaretRightOutlined /><strong>{pricing.price}</strong> </p>
                             <div style={{ fontWeight: '600', textAlign: 'center', margin: '1rem 1rem ', fontSize: '22px' }}>
-                                <strong> Starting At $2.75/mo* </strong>
+                                <strong> {pricing.price} </strong>
                             </div>
                             <Link to={`Orders/${pricing.id}`}> <Button size="large" type="primary" block> Buy Now! </Button> </Link>
                         </Card>

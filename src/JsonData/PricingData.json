@@ -29,5 +29,16 @@
         "Transfer": "Free WordPress/Cpanel Website Transfer",
         "Email": "Professional Email Address",
         "price": "Starting At $10.08/mo*"
+    },
+    {
+        "id": 4,
+        "title":"Mega Plan",
+        "Single": "Single Domain",
+        "FreeWordPress": " Free WordPress Installs",
+        "FreeSSL": " Free SSL Certificate",
+        "$200": " $200 Marketing Offer",
+        "Transfer": "Free WordPress/Cpanel Website Transfer",
+        "Email": "Professional Email Address",
+        "price": "Starting At $15.08/mo*"
     }
 ]
