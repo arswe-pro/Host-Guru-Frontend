@@ -19,6 +19,7 @@ import AdminPanel from './Components/AdminPages/AdminPanel';
 import MakeAdmin from './Components/AdminPages/MakeAdmin';
 import Review from './Components/FrontPages/OrderPage/Review';
 import ManagedService from './Components/AdminPages/ManagedService';
+import PaymentOption from './Components/FrontPages/OrderPage/PaymentOption';
 
 
 export const UserContext = createContext();
@@ -41,11 +42,9 @@ function App() {
 
 						<Route path="/Price"> <Price /> </Route>
 
-						<PrivateRoute path="/Orders"> <Orders /> </PrivateRoute>
+						<Route path="/PaymentOption"> <PaymentOption /> </Route>
 
-						<PrivateRoute path="/Orders/:id"> <Orders /> </PrivateRoute>
-
-
+						<PrivateRoute  path="/serviceOrder/:id"> <Orders /> </PrivateRoute>
 
 						<PrivateRoute path="/Review"> <Review /> </PrivateRoute>
 

@@ -1,15 +1,17 @@
 import React from 'react';
 import { Layout, Menu, Typography } from 'antd';
 import { AppstoreOutlined, StarOutlined, HomeOutlined } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import OrderFrom from './OrderFrom';
 
-
 const { Content, Sider } = Layout;
-
 const { Title } = Typography;
 
 const Orders = () => {
+
+    let { id } = useParams()
+
+    console.log(id);
     return (
         <>
             <Layout style={{ height: '100vh' }}>
