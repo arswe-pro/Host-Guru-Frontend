@@ -12,7 +12,7 @@ const HeroSection = () => {
         <Row justify="center">
             <Col xs={24} sm={24} md={11} lg={11} xl={11} xxl={11}>
                 <div style={{ marginTop: '6rem', }}>
-                    <Title>Software and Web Application  <br /> Service Provider </Title>
+                    <Title>Bring your ideas to life Hosting <br /> Service Provider </Title>
 
                     <CheckOutlined /> Free 1 Year Domain Registration on Select Plans! <br />
                     <CheckOutlined /> Hundreds of Drag-and-Drop Website Templates<br />
@@ -20,13 +20,13 @@ const HeroSection = () => {
                     <CheckOutlined /> 1-Click WordPress Installation<br />
                     <CheckOutlined /> $200 in Google AdWords and Yahoo! Credits<br />
 
-                    <Link to="/SignUp"> <Button style={{ marginTop: '2rem' }} size="large" type="primary">Register</Button> </Link> 
+                    <Link to="/SignUp"> <Button style={{ marginTop: '2rem' }} size="large" type="primary">Register</Button> </Link>
                     <Button size="large" type="dashed">Transfer</Button>
                 </div>
             </Col>
             <Col xs={22} sm={22} md={11} lg={11} xl={11} xxl={11}>
-                <br/>
-                <Image width={500}  src={hosting} />
+                <br />
+                <Image width={500} src={hosting} />
             </Col>
         </Row>
 
