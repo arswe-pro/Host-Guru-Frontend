@@ -41,13 +41,13 @@ function App() {
 
 						<Route path="/Price"> <Price /> </Route>
 
-						<Route path="/Orders"> <Orders /> </Route>
+						<PrivateRoute path="/Orders"> <Orders /> </PrivateRoute>
 
 						<PrivateRoute path="/Orders/:id"> <Orders /> </PrivateRoute>
 
 
 
-						<Route path="/Review"> <Review /> </Route>
+						<PrivateRoute path="/Review"> <Review /> </PrivateRoute>
 
 						<Route path="/Project"> <Project /> </Route>
 
