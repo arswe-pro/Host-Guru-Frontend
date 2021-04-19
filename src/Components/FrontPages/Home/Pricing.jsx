@@ -35,7 +35,7 @@ const Pricing = () => {
                             <div style={{ fontWeight: '600', textAlign: 'center', margin: '1rem 1rem ', fontSize: '22px' }}>
                                 <strong> {pricing.price} </strong>
                             </div>
-                            <Link to={`Orders/${pricing.id}`}> <Button size="large" type="primary" block> Buy Now! </Button> </Link>
+                            <Link to={`serviceOrder/${pricing.id}`}> <Button size="large" type="primary" block> Buy Now! </Button> </Link>
                         </Card>
                     </Col>
                 )}
