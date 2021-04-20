@@ -8,7 +8,7 @@ const { Title } = Typography;
 const ServicesSection = () => {
 
     const [services, setServices] = useState([])
-    
+
     useEffect(() => {
         fetch('https://guarded-coast-78303.herokuapp.com/AllServices')
             .then(Response => Response.json())
@@ -28,7 +28,7 @@ const ServicesSection = () => {
                         <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4} key={data._id}>
                             <Card hoverable cover={<Image alt="example" src={data.image} />} style={{ textAlign: 'center', backgroundColor: 'lightsalmon', color: '#fff' }}>
                                 <Title level={2}>{data.name} </Title>
-                                <Title level={4}>${data.price} </Title>
+                                <Title level={4}> Starting At ${data.price}/mo  </Title>
                                 <Meta description={data.description}> </Meta>
                             </Card>
                             <Link to={`serviceOrder/${data._id}`}> <Button size="large" type="primary" block> Buy Now! </Button> </Link>
