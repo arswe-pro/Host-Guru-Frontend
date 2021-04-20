@@ -10,7 +10,7 @@ const ServicesSection = () => {
     const [services, setServices] = useState([])
     
     useEffect(() => {
-        fetch('https://guarded-coast-78303.herokuapp.com/AllServices')
+        fetch('http://localhost:3333/AllServices')
             .then(Response => Response.json())
             .then(data => setServices(data))
     }, [])
@@ -26,8 +26,7 @@ const ServicesSection = () => {
                     {services.map(data =>
 
                         <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4} key={data._id}>
-                            <Card hoverable style={{ textAlign: 'center', backgroundColor: 'lightsalmon', color: '#fff' }}>
-                                <div style={{ fontSize: '8rem', color: 'InfoBackground' }}> <Image src={data.image} alt=""/>  </div>
+                            <Card hoverable cover={<Image alt="example" src={data.image} />} style={{ textAlign: 'center', backgroundColor: 'lightsalmon', color: '#fff' }}>
                                 <Title level={2}>{data.name} </Title>
                                 <Title level={4}>${data.price} </Title>
                                 <Meta description={data.description}> </Meta>
