@@ -44,7 +44,7 @@ const CheckoutForm = ({ handlePayment }) => {
             <form onSubmit={handleSubmit}>
                 <CardElement />
                 <br/>
-                <button type="submit" disabled={!stripe} style={{width:'100%' , padding:'1rem 0', backgroundColor:'#cccc'}}> Pay </button>
+                <button type="submit" disabled={!stripe} style={{width:'100%' , padding:'0.5rem 0', backgroundColor:'#ccc'}}> Pay </button>
             </form>
 
 

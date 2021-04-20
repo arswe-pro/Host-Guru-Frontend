@@ -27,7 +27,7 @@ const AddService = () => {
                 method: "POST",
                 headers: { 'content-type': 'application/json' },
                 body: JSON.stringify(ServiceData)
-            }).then(data => { if (data.ok == true) { <Redirect to='/' /> } })
+            }).then(data => { if (data.ok === true) { <Redirect to='/' /> } })
         }
         else { alert('Image is uploading , Please wait') }
     };
@@ -44,8 +44,8 @@ const AddService = () => {
                             </Form.Item>
 
 
-                            <Form.Item name="price" rules={[{ required: true, message: 'Please input your Price!' }]} >
-                                <Input prefix={<UserOutlined />} placeholder="price " />
+                            <Form.Item name="price" rules={[{ required: true, message: 'Please input your price!' }]} >
+                                <Input prefix={<UserOutlined />} placeholder=" Price " />
                             </Form.Item>
 
                             <Form.Item>
@@ -53,7 +53,7 @@ const AddService = () => {
                             </Form.Item>
 
                             <Form.Item name="description" rules={[{ required: true, message: 'Please input your Description!' }]} >
-                                <TextArea prefix={<UserOutlined />} placeholder="description " rows={4} />
+                                <TextArea prefix={<UserOutlined />} placeholder="Description " rows={4} />
                             </Form.Item>
 
                             <Form.Item >

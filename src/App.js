@@ -10,7 +10,7 @@ import Service from './Components/FrontPages/Service/Service';
 import Project from './Components/FrontPages/Project/Project';
 import Price from './Components/FrontPages/Pricing/Price';
 import Client from './Components/FrontPages/Client/Client';
-import Orders from './Components/FrontPages/OrderPage/Orders';
+import Orders from './Components/FrontPages/OrderPage/serviceOrder';
 import loader from './images/loader.gif';
 import PrivateRoute from './Components/Authentication/Auth/PrivateRoute';
 import Auth, { AuthContextProvider } from './Components/Authentication/Auth/useAuth';

@@ -13,7 +13,7 @@ const PaymentOption = ({ handlePayment }) => {
         <div style={{ marginTop: '5rem' }}>
             <Row justify="center" >
                 <Col xs={24} sm={24} md={12} lg={12} xl={8} xxl={8}>
-                    <Card title=" Give Your Account details ">
+                    <Card title=" Give Your Bank Account details ">
                         <Elements stripe={stripePromise}>
                             <CheckoutForm handlePayment={handlePayment} />
                         </Elements>

@@ -14,18 +14,20 @@ const OurClient = () => {
     const [clients, setClients] = useState(ClientData)
 
     useEffect(() => {
-        setClients(clients)
-    }, [clients])
+        fetch('http://localhost:3333/AllReview')
+            .then(Response => Response.json())
+            .then(data => setClients(data))
+    }, [])
 
     return (
         <div style={{ margin: '4rem 2rem' }}>
-            <Title style={{ textAlign: 'center' }}>Our Client </Title>
+            <Title style={{ textAlign: 'center' }}>Our Client or Customers Review</Title>
             <hr style={{padding:'1px' , backgroundColor:'lightsalmon' , width:'10rem' , margin: '0 auto' , marginBottom:'2rem'}} />
             <Row justify="center">
                 {clients.map(client =>
                     <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4} key={client.id}>
                         <Card title={client.name} hoverable cover={<Image alt="example" src={client.image} />} >
-                            <Meta title={client.designation} description={client.summary} />
+                            <Meta title={client.designation} description={client.description} />
                             <div style={{ textAlign: 'center' }}>
                                 <Link to="#" style={{ marginLeft: '1rem', fontSize: '1.5rem', marginTop: '2rem' }}><MailOutlined /> </Link>
                                 <Link to="#" style={{ marginLeft: '1rem', fontSize: '1.5rem', marginTop: '2rem' }}> <FacebookOutlined /></Link>

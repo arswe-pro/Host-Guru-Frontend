@@ -14,13 +14,14 @@ const Orders = () => {
     console.log(id);
     return (
         <>
-            <Layout style={{ height: '100vh' }}>
+            <Layout >
                 <Sider style={{ color: '#fff' }}>
                     <Title level={4} style={{ color: '#fff', textAlign: 'center', margin: '2rem 0', }}> <Link to="/" target="_blank"> <HomeOutlined /> HOST GURU  </Link> </Title>
 
                     <Menu theme="dark" mode="inline" defaultOpenKeys={['1']}>
                         <Menu.Item key="1"> <Link to="/Orders"> <AppstoreOutlined /> Order List  </Link> </Menu.Item>
                         <Menu.Item key="2"> <Link to="/Review"> <StarOutlined /> Review  </Link> </Menu.Item>
+                       
                     </Menu>
 
                 </Sider>

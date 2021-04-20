@@ -1,4 +1,4 @@
-import { Button, Card, Col, Input, Row } from 'antd';
+import { Form, Button, Card, Col, Input, Row } from 'antd';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -23,18 +23,26 @@ const OrderFrom = () => {
 
     }, [id])
 
+    const onFinish = (data) => {
+        console.log(data);
+    }
+
+
+
+    // const handleSubmit = (data) => {
+    //     console.log(data);
+    // }
+
+
+
+
 
     return (
         <div>
             <Row justify="center">
                 <Col xs={24} sm={24} md={12} lg={12} xl={8} xxl={6}>
                     <Card>
-
-                        <form action="#">
-
-                            <div style={{ textAlign: 'center' }}>
-                                <img src={image} width="100" alt="" />
-                            </div>
+                        <Form name="horizontal_login" onFinish={onFinish}>
 
                             <Input value={auth.user.name} />
                             <br />
@@ -48,13 +56,24 @@ const OrderFrom = () => {
                             <br />
                             <br />
 
+                            <Input value={image} />
+                            <br />
+                            <br />
+
                             <Input value={price} />
                             <br />
                             <br />
-
-
+                            
                             <Link to="/PaymentOption"> <Button type="primary" block> Submit </Button>  </Link>
-                        </form>
+
+
+                        </Form>
+
+                        {/* 
+                        <form onSubmit={handleSubmit}>
+                          
+                        </form> */}
+
                     </Card>
                 </Col>
             </Row>
