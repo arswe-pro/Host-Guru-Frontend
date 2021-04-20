@@ -33,6 +33,7 @@ function App() {
 			<AuthContextProvider>
 				<Router>
 					<Switch>
+
 						<Route exact path="/"> <Home /> </Route>
 
 						<Route path="/Home"> <Home /> </Route>
@@ -67,8 +68,11 @@ function App() {
 						<Route path="/SignUp"> <SignUp /> </Route>
 
 						<Route path="*"> <NotFound /> </Route>
+
 					</Switch>
+
 				</Router>
+				
 			</AuthContextProvider>
 			:
 			<div style={{ textAlign: 'center' }}>
