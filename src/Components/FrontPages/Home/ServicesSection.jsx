@@ -28,8 +28,9 @@ const ServicesSection = () => {
                         <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4} key={data._id}>
                             <Card hoverable style={{ textAlign: 'center', backgroundColor: 'lightsalmon', color: '#fff' }}>
                                 <div style={{ fontSize: '8rem', color: 'InfoBackground' }}> <img src={data.image} width="200" alt=""/>  </div>
-                                <Title level={4}>{data.name} </Title>
-                                <Meta title={data.price} description={data.description}> </Meta>
+                                <Title level={2}>{data.name} </Title>
+                                <Title level={4}>${data.price} </Title>
+                                <Meta description={data.description}> </Meta>
                             </Card>
                             <Link to={`serviceOrder/${data._id}`}> <Button size="large" type="primary" block> Buy Now! </Button> </Link>
                         </Col>

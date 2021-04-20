@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, Form, Input, Layout, Menu, Row, Typography } from 'antd';
-import { AppstoreOutlined, EditOutlined, DashboardOutlined, UserOutlined, HomeOutlined } from '@ant-design/icons';
+import { AppstoreOutlined, EditOutlined, DashboardOutlined, UserOutlined, HomeOutlined, DeleteOutlined } from '@ant-design/icons';
 import { Link, useHistory } from 'react-router-dom';
 const { Content, Sider } = Layout;
 const { Title } = Typography;
@@ -29,6 +29,19 @@ const MakeAdmin = () => {
             .then(Response => Response.json())
             .then(data => setAdmins(data))
     }, [])
+
+
+
+    // Delete Product Item
+    const deleteItem = id => {
+        fetch(`https://guarded-coast-78303.herokuapp.com/delete/${id}`, {
+            method: "DELETE",
+        }).then(res => {
+            if (res) {
+                console.log(res);
+            }
+        })
+    }
 
     return (
         <>
@@ -77,14 +90,19 @@ const MakeAdmin = () => {
                                                 <tr>
                                                     <th>ID</th>
                                                     <th>Email</th>
+                                                    <th>Action</th>
                                                 </tr>
                                             </thead>
 
                                             <tbody>
                                                 {Admins.map(Admin =>
                                                     <tr>
-                                                        <td width="100%">{Admin._id}</td>
-                                                        <td width="100%">{Admin.email}</td>
+                                                        <td width="80%">{Admin._id}</td>
+                                                        <td width="80%">{Admin.email}</td>
+                                                        <td>
+                                                            <Link to="#"> <Button type="primary"> <EditOutlined /> </Button> </Link>
+                                                            <Link to="/"> <Button onClick={() => deleteItem(Admin._id)} style={{ backgroundColor: 'red' }}>  <DeleteOutlined /> </Button> </Link>
+                                                        </td>
                                                     </tr>
                                                 )}
                                             </tbody>
