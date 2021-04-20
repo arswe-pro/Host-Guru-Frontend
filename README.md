@@ -1,4 +1,4 @@
-# Host-guru.com
+# Hostguru.com
 Ideal for setting up your personal website, WordPress blog or business landing page, these hosting plans are simple and affordable.
 Ideal if you’re a solopreneur, e-commerce specialist, or web developer looking to add more power and speed to your company website or online business.
 Perfect for websites that demand the highest performance, enjoy all the flexibility and security with sole access to every resource.
@@ -18,12 +18,16 @@ Our website uses cookies, which help us to improve our site and enables us to de
 * User Admin Panel
 * auth.
 * and much more...
+
+
 ## React Features
 * JSX
 * Components
 * Virtual DOM
 * React Route
 * Context API
+
+
 ## Technology
 * HTML
 * CSS
@@ -34,5 +38,7 @@ Our website uses cookies, which help us to improve our site and enables us to de
 * Express JS
 * mongoDB
 * and much more...
+
+
 Runs the app in the development mode.\
 Open [https://hostguru.netlify.app/](https://hostguru.netlify.app/) to view it in the browser.
