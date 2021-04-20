@@ -1,4 +1,4 @@
-import { Button, Card, Col, Row, Typography } from 'antd';
+import { Button, Card, Col, Image, Row, Typography } from 'antd';
 import Meta from 'antd/lib/card/Meta';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -27,7 +27,7 @@ const ServicesSection = () => {
 
                         <Col xs={24} sm={12} md={8} lg={6} xl={6} xxl={4} key={data._id}>
                             <Card hoverable style={{ textAlign: 'center', backgroundColor: 'lightsalmon', color: '#fff' }}>
-                                <div style={{ fontSize: '8rem', color: 'InfoBackground' }}> <img src={data.image} width="200" alt=""/>  </div>
+                                <div style={{ fontSize: '8rem', color: 'InfoBackground' }}> <Image src={data.image} alt=""/>  </div>
                                 <Title level={2}>{data.name} </Title>
                                 <Title level={4}>${data.price} </Title>
                                 <Meta description={data.description}> </Meta>
