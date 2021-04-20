@@ -4,11 +4,11 @@ import { AppstoreOutlined, EditOutlined, DashboardOutlined, UserOutlined, HomeOu
 import { Link } from 'react-router-dom';
 import AddService from './AddService';
 // import OrderList from './OrderList';
-
-
 const { Content, Sider } = Layout;
-
 const { Title } = Typography;
+
+
+
 
 const AdminPanel = () => {
     return (

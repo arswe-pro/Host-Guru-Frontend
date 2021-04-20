@@ -27,7 +27,7 @@ const ReviewForm = () => {
         if (imageURL !== null) {
             const ServiceData = data;
             ServiceData.image = imageURL;
-            fetch('http://localhost:3333/customerReview', {
+            fetch('https://guarded-coast-78303.herokuapp.com/customerReview', {
                 method: "POST",
                 headers: { 'content-type': 'application/json' },
                 body: JSON.stringify(ServiceData)

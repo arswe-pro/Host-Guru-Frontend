@@ -7,7 +7,7 @@ const ReviewTable = () => {
     const [reviews, setReviews] = useState([])
     
     useEffect(() => {
-        fetch('http://localhost:3333/AllReview')
+        fetch('https://guarded-coast-78303.herokuapp.com/AllReview')
             .then(Response => Response.json())
             .then(data => setReviews(data))
     }, [])

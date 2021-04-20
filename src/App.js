@@ -20,6 +20,7 @@ import MakeAdmin from './Components/AdminPages/MakeAdmin';
 import Review from './Components/FrontPages/OrderPage/Review';
 import ManagedService from './Components/AdminPages/ManagedService';
 import PaymentOption from './Components/FrontPages/OrderPage/PaymentOption';
+import OurOrder from './Components/FrontPages/OrderPage/OurOrder';
 
 
 export const UserContext = createContext();
@@ -47,6 +48,7 @@ function App() {
 						<PrivateRoute  path="/serviceOrder/:id"> <Orders /> </PrivateRoute>
 
 						<PrivateRoute path="/Review"> <Review /> </PrivateRoute>
+						<PrivateRoute path="/OurOrder"> <OurOrder /> </PrivateRoute>
 
 						<Route path="/Project"> <Project /> </Route>
 

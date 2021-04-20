@@ -14,7 +14,7 @@ const OurClient = () => {
     const [clients, setClients] = useState(ClientData)
 
     useEffect(() => {
-        fetch('http://localhost:3333/AllReview')
+        fetch('https://guarded-coast-78303.herokuapp.com/AllReview')
             .then(Response => Response.json())
             .then(data => setClients(data))
     }, [])

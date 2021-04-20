@@ -1,12 +1,35 @@
-import React from 'react';
-import { Layout, Menu, Typography } from 'antd';
+import React, { useEffect, useState } from 'react';
+import { Button, Card, Col, Form, Input, Layout, Menu, Row, Typography } from 'antd';
 import { AppstoreOutlined, EditOutlined, DashboardOutlined, UserOutlined, HomeOutlined } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
-
+import { Link, useHistory } from 'react-router-dom';
 const { Content, Sider } = Layout;
 const { Title } = Typography;
 
 const MakeAdmin = () => {
+    const history = useHistory();
+
+    const onFinish = (values) => {
+        console.log(values);
+        fetch('https://guarded-coast-78303.herokuapp.com/addAdmin', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(values)
+        }).then(res => res.json())
+            .then(data => {
+                alert('Your admin is successfully added')
+                history.replace('/MakeAdmin');
+            })
+    }
+
+
+    const [Admins, setAdmins] = useState([])
+
+    useEffect(() => {
+        fetch('https://guarded-coast-78303.herokuapp.com/AllAdmin')
+            .then(Response => Response.json())
+            .then(data => setAdmins(data))
+    }, [])
+
     return (
         <>
             <Layout style={{ height: '100vh' }}>
@@ -26,6 +49,50 @@ const MakeAdmin = () => {
                         </div>
 
                         <div>
+
+                            <Row justify="center">
+                                <Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12}>
+                                    <Card title="Add Admin">
+                                        <Form name="horizontal_login" onFinish={onFinish}>
+
+                                            <Form.Item name="email" rules={[{ required: true, message: 'Please input your Product Email!' }]} >
+                                                <Input prefix={<UserOutlined />} placeholder=" Email" />
+                                            </Form.Item>
+
+                                            <Form.Item >
+                                                <Button htmlType="submit" type="primary" block> Submit </Button>
+                                            </Form.Item>
+
+                                        </Form>
+                                    </Card>
+                                </Col>
+                            </Row>
+
+                            <Row justify="center">
+                                <Col xs={24} sm={24} md={12} lg={12} xl={12} xxl={12}>
+                                    <Card title="Admin List">
+
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Email</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                {Admins.map(Admin =>
+                                                    <tr>
+                                                        <td width="100%">{Admin._id}</td>
+                                                        <td width="100%">{Admin.email}</td>
+                                                    </tr>
+                                                )}
+                                            </tbody>
+                                        </table>
+
+                                    </Card>
+                                </Col>
+                            </Row>
 
                         </div>
                     </Content>

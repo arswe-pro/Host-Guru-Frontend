@@ -8,7 +8,7 @@ const Managed = () => {
     const [serviceManaged, setServiceManaged] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:3333/AllServices')
+        fetch('https://guarded-coast-78303.herokuapp.com/AllServices')
             .then(Response => Response.json())
             .then(data => setServiceManaged(data))
     }, [])
@@ -16,7 +16,7 @@ const Managed = () => {
 
     // Delete Product Item
     const deleteItem = id => {
-        fetch(`http://localhost:3333/delete/${id}`, {
+        fetch(`https://guarded-coast-78303.herokuapp.com/delete/${id}`, {
             method: "DELETE",
         }).then(res => {
             if (res) {

@@ -23,7 +23,7 @@ const AddService = () => {
         if (imageURL !== null) {
             const ServiceData = data;
             ServiceData.image = imageURL;
-            fetch('http://localhost:3333/addservice', {
+            fetch('https://guarded-coast-78303.herokuapp.com/addservice', {
                 method: "POST",
                 headers: { 'content-type': 'application/json' },
                 body: JSON.stringify(ServiceData)
