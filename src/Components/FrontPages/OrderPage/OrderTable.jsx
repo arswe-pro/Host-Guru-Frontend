@@ -1,12 +1,15 @@
 import { Card, Col, Row } from 'antd';
 import React, { useEffect, useState } from 'react';
+import { useAuth } from '../../Authentication/Auth/useAuth';
 
 const OrderTable = () => {
+
+    const auth = useAuth();
     
     const [orders, setOrders] = useState([])
     
     useEffect(() => {
-        fetch('https://guarded-coast-78303.herokuapp.com/AllOrder')
+        fetch(`https://guarded-coast-78303.herokuapp.com/showOrders/${auth.user.email}`)
             .then(Response => Response.json())
             .then(data => setOrders(data))
     }, [])
