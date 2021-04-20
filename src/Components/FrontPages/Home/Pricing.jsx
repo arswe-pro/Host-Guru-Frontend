@@ -17,7 +17,7 @@ const Pricing = () => {
     }, [pricings])
 
     return (
-        <div style={{ marginTop: '4rem', textAlign: 'center' }}>
+        <div style={{ margin: '4rem 2rem', textAlign: 'center' }}>
            
             <Title > Every Plan Pricing </Title>
             <hr style={{padding:'1px' , backgroundColor:'saddlebrown' , width:'10rem' , margin: '0 auto' , marginBottom:'2rem'}} />
