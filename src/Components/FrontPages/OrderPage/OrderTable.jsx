@@ -12,7 +12,7 @@ const OrderTable = () => {
         fetch(`https://guarded-coast-78303.herokuapp.com/showOrders/${auth.user.email}`)
             .then(Response => Response.json())
             .then(data => setOrders(data))
-    }, [])
+    }, [auth.user.email])
 
     return (
         <div>

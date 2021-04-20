@@ -18,6 +18,7 @@ const Navbar = () => {
             <Menu mode="horizontal" theme="light">
                 <Menu.Item key="Home"> <Link to="/Home"> <img src={logo} alt=""/> </Link> </Menu.Item>
                 <Menu.Item key="Service"> <Link to="/Service"> Service </Link> </Menu.Item>
+                <Menu.Item key="Service"> <Link to="/OurOrder"> Order </Link> </Menu.Item>
                 <Menu.Item key="Service"> <Link to="/Price"> Pricing </Link> </Menu.Item>
                 <Menu.Item key="Project"> <Link to="/Project"> Project </Link> </Menu.Item>
                 <Menu.Item key="Project"> <Link to="/Client">Client </Link> </Menu.Item>
