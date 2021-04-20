@@ -10,7 +10,7 @@ const ServicesSection = () => {
     const [services, setServices] = useState([])
     
     useEffect(() => {
-        fetch('http://localhost:3333/AllServices')
+        fetch('https://guarded-coast-78303.herokuapp.com/AllServices')
             .then(Response => Response.json())
             .then(data => setServices(data))
     }, [])
