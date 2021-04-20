@@ -3,6 +3,7 @@ import { Header } from 'antd/lib/layout/layout';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../../Authentication/Auth/useAuth';
+import logo from '../../../../images/logo.png'
 
 const Navbar = () => {
     const auth = useAuth();
@@ -15,7 +16,7 @@ const Navbar = () => {
     return (
         <Header style={{ backgroundColor: '#fff' }}>
             <Menu mode="horizontal" theme="light">
-                <Menu.Item key="Home"> <Link to="/Home"> Home </Link> </Menu.Item>
+                <Menu.Item key="Home"> <Link to="/Home"> <img src={logo} alt=""/> </Link> </Menu.Item>
                 <Menu.Item key="Service"> <Link to="/Service"> Service </Link> </Menu.Item>
                 <Menu.Item key="Service"> <Link to="/Price"> Pricing </Link> </Menu.Item>
                 <Menu.Item key="Project"> <Link to="/Project"> Project </Link> </Menu.Item>
