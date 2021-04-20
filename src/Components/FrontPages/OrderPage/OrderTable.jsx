@@ -36,8 +36,8 @@ const OrderTable = () => {
                                     <tr key={order.id}>
 
                                        
-                                        <td>{order.name}</td>
-                                        <td>{order.email}</td>
+                                        <td width="20%">{order.name}</td>
+                                        <td width="20%">{order.email}</td>
                                         <td >{order.serviceName}</td>
                                         <td><img src={order.photo} width="60" /></td>
                                         <td>{order.price}</td>
