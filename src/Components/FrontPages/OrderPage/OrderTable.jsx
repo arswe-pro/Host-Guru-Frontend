@@ -40,7 +40,7 @@ const OrderTable = () => {
                                         <td style={{padding:'0.5rem'}}>{order.name}</td>
                                         <td style={{padding:'0.5rem'}}>{order.email}</td>
                                         <td style={{padding:'0.5rem'}}>{order.serviceName}</td>
-                                        <td style={{padding:'0.5rem'}}><img src={order.photo} width="100" /></td>
+                                        <td ><img src={order.photo} width="100" /></td>
                                         <td style={{padding:'0.5rem'}}>{order.price}</td>
                                     </tr>
                                 )}

@@ -30,8 +30,6 @@ const MakeAdmin = () => {
             .then(data => setAdmins(data))
     }, [])
 
-
-
     // Delete Product Item
     const deleteItem = id => {
         fetch(`https://guarded-coast-78303.herokuapp.com/delete/${id}`, {
@@ -88,16 +86,14 @@ const MakeAdmin = () => {
                                         <table>
                                             <thead>
                                                 <tr>
-                                                    <th>ID</th>
                                                     <th>Email</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
 
                                             <tbody>
-                                                {Admins.map(Admin =>
+                                                {Admins && Admins.map(Admin =>
                                                     <tr>
-                                                        <td width="80%">{Admin._id}</td>
                                                         <td width="80%">{Admin.email}</td>
                                                         <td>
                                                             <Link to="#"> <Button type="primary"> <EditOutlined /> </Button> </Link>
