@@ -1,6 +1,7 @@
 import { Form, Button, Card, Col, Input, Row } from 'antd';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import { useAuth } from '../../Authentication/Auth/useAuth';
 
 const OrderFrom = () => {
@@ -74,7 +75,7 @@ const OrderFrom = () => {
                             <br />
                             <br />
 
-                            <Button htmlType="button" onClick={handleClick} type="primary" block> Submit </Button>
+                            <Link to="/PaymentOption"> <Button htmlType="button" onClick={handleClick} type="primary" block> Submit </Button> </Link>
                         </Form>
                     </Card>
                 </Col>

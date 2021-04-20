@@ -18,7 +18,7 @@ const PaymentOption = ({ handlePayment }) => {
                             <CheckoutForm handlePayment={handlePayment} />
                         </Elements>
                     </Card>
-                    <Link to="/"><Button type="primary" shape="round"> Back Home </Button> </Link>
+                    <Link to="/OurOrder"><Button type="primary" shape="round"> Yor Order List </Button> </Link>
                 </Col>
 
             </Row>
