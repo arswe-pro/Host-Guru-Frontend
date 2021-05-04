@@ -1,8 +1,5 @@
 # Hostguru.com
-Ideal for setting up your personal website, WordPress blog or business landing page, these hosting plans are simple and affordable.
-Ideal if you’re a solopreneur, e-commerce specialist, or web developer looking to add more power and speed to your company website or online business.
-Perfect for websites that demand the highest performance, enjoy all the flexibility and security with sole access to every resource.
-Whether it’s for personal or business use, you need a web hosting service like Namecheap's to get your ideas online. No matter which plan you choose, you can count on us for reliability, security, and a stress-free experience. Our website uses cookies, which help us to improve our site and enables us to deliver the best possible service and customer experience
+There are many reasons why individuals or companies want to change to a new web hosting company. It could be as simple as not enough storage space or bandwidth, or it could be due to its customer service, or lack thereof. Easier said than done? Changing to a new web hosting company may sound like a daunting task, but it doesn't have to be that complex - there are just a few things to keep in mind
 
 * LIVE : [https://hostguru.netlify.app/](https://hostguru.netlify.app/).
 
